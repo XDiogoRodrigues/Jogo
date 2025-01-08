@@ -31,7 +31,8 @@ def gerator_expression(option: int) -> tuple:
                 result: int = number_1 + number_2 + number_3
                 return f'Qual é a soma da seguinte adição: {number_1} {operation_choice} {number_2} {operation_choice} {number_3} ?', result
             elif operation_choice == '-':
-                result = number_1 - number_2 
+                number_2 = random.randint(0,450)
+                result: int = number_1 - number_2 
                 return f'Qual é o valor da seguinte subtração: {number_1} {operation_choice} {number_2} ?', result
            
         case 3:
@@ -47,7 +48,8 @@ def gerator_expression(option: int) -> tuple:
                 result: int = number_1 + number_2 + number_3
                 return f'Qual é a soma da seguinte adição: {number_1} {operation_choice} {number_2} {operation_choice} {number_3} ?', result, option
             elif operation_choice == '-':
-                result = number_1 - number_2 
+                number_2 = random.randint(1, 499)
+                result: int = number_1 - number_2 
                 return f'Qual é o valor da seguinte subtração: {number_1} {operation_choice} {number_2} ?', result, option
             elif operation_choice == 'x':
                 number_1: int = random.randint(1,150)
